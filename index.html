@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clayron — Documents professionnels & accompagnement à distance</title>
+<meta name="description" content="Clayron : vente en ligne de documents professionnels et de ressources numériques, et accompagnement à distance des entreprises et des entrepreneurs.">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --ink: #14161a;
+    --muted: #5b6068;
+    --line: #e6e2db;
+    --card: #ffffff;
+    --accent: #1d4ed8;
+    --accent-soft: #eef2ff;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: 100%; max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  header { border-bottom: 1px solid var(--line); background: rgba(251,250,248,.9); position: sticky; top: 0; backdrop-filter: blur(8px); }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 68px; }
+  .brand { font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 15px; }
+  .nav a { color: var(--muted); text-decoration: none; font-size: 14px; }
+  .nav a:hover { color: var(--ink); }
+  .nav-links { display: flex; gap: 22px; }
+  .btn {
+    display: inline-block; padding: 12px 22px; border-radius: 8px;
+    background: var(--ink); color: #fff; text-decoration: none;
+    font-size: 14px; font-weight: 600; border: 1px solid var(--ink);
+  }
+  .btn:hover { background: #000; }
+  .btn.ghost { background: transparent; color: var(--ink); }
+  .btn.ghost:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+
+  .hero { padding: 92px 0 76px; }
+  .eyebrow { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin: 0 0 18px; }
+  h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.12; margin: 0 0 22px; letter-spacing: -.02em; max-width: 16ch; }
+  .lead { font-size: clamp(16px, 2vw, 19px); color: var(--muted); max-width: 62ch; margin: 0 0 34px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 26px; margin: 0 0 12px; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 36px; max-width: 60ch; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 26px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .card h3 { margin: 0; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .card ul { margin: 4px 0 0; padding-left: 18px; color: var(--muted); font-size: 15px; }
+  .card li { margin: 4px 0; }
+
+  .steps { counter-reset: s; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .step { border-left: 2px solid var(--accent); padding-left: 16px; }
+  .step strong { display: block; margin-bottom: 4px; }
+  .step span { color: var(--muted); font-size: 15px; }
+
+  .contact { background: var(--ink); color: #fff; border-radius: 16px; padding: 48px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+  .contact h2 { margin: 0 0 8px; color: #fff; }
+  .contact p { margin: 0; color: #b9bcc4; max-width: 46ch; }
+  .contact .btn { background: #fff; color: var(--ink); border-color: #fff; }
+  .contact .btn:hover { background: var(--accent-soft); border-color: var(--accent-soft); color: var(--accent); }
+
+  footer { padding: 34px 0 48px; color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+    .hero { padding: 64px 0 56px; }
+    .contact { padding: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Clayron</div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#methode">Méthode</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Me contacter</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow">Activité indépendante · 100 % à distance</p>
+    <h1>Documents professionnels &amp; accompagnement à distance</h1>
+    <p class="lead">
+      Je vends en ligne des documents professionnels et des ressources numériques prêtes à l'emploi,
+      et j'accompagne à distance les entreprises et les entrepreneurs pour structurer, optimiser
+      et développer leur activité.
+    </p>
+    <div class="actions">
+      <a class="btn" href="#services">Découvrir les services</a>
+      <a class="btn ghost" href="#contact">Demander un devis</a>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Deux façons de travailler ensemble</h2>
+      <p class="sub">Des outils concrets à utiliser tout de suite, ou un accompagnement sur mesure pour avancer plus vite.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Documents &amp; ressources numériques</h3>
+          <p>Des supports pratiques, téléchargeables en ligne, pour gagner du temps dans la gestion de votre activité.</p>
+          <ul>
+            <li>Modèles et documents professionnels</li>
+            <li>Guides et supports de travail</li>
+            <li>Outils pratiques de gestion et d'organisation</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Accompagnement &amp; conseil à distance</h3>
+          <p>Un suivi personnalisé, adapté à vos besoins, pour structurer, optimiser et développer vos projets.</p>
+          <ul>
+            <li>Organisation et gestion de l'activité</li>
+            <li>Stratégie et développement</li>
+            <li>Accompagnement des entrepreneurs et des entreprises</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="methode">
+    <div class="wrap">
+      <h2>Comment ça se passe</h2>
+      <p class="sub">Un processus simple, entièrement à distance.</p>
+      <div class="steps">
+        <div class="step"><strong>1. Prise de contact</strong><span>Vous m'expliquez votre besoin et votre contexte.</span></div>
+        <div class="step"><strong>2. Proposition</strong><span>Je vous oriente vers la ressource adaptée ou une prestation sur mesure.</span></div>
+        <div class="step"><strong>3. Réalisation</strong><span>Livraison des documents ou accompagnement à distance, selon le format retenu.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-top:none">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h2>Parlons de votre projet</h2>
+          <p>Une question sur un document ou un besoin d'accompagnement ? Écrivez-moi, je vous réponds rapidement.</p>
+        </div>
+        <a class="btn" href="mailto:contact@clayron.fr">contact@clayron.fr</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>© <span id="y">2026</span> Clayron — Activité indépendante</span>
+  <span>Documents professionnels &amp; accompagnement à distance</span>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
